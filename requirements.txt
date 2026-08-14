@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg[binary]
+pydantic-settings
+python-dotenv
+pymupdf
+rapidocr_onnxruntime==1.4.4
+sentence-transformers==5.1.2
+pytest
