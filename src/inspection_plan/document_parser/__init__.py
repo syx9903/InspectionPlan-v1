@@ -9,6 +9,7 @@ from .models import Page, ParseMethod, TextStatus
 from .ocr_pdf_parser import DEFAULT_OCR_DPI, OcrPdfParser
 from .pdf_page_router import MIN_MEANINGFUL_CHARACTERS, PdfPageRouter
 from .text_pdf_parser import PdfOpenError, TextPdfParser
+from .table_adapter import TableAdapterError, adapt_ppstructure_table
 from .table_models import (
     BoundingBox,
     CellContentType,
@@ -30,7 +31,9 @@ __all__ = [
     "PdfOpenError",
     "ReviewStatus",
     "Table",
+    "TableAdapterError",
     "TableCell",
+    "adapt_ppstructure_table",
     "MIN_MEANINGFUL_CHARACTERS",
     "TextPdfParser",
     "TextStatus",
