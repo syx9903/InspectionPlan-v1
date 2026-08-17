@@ -4,7 +4,15 @@ sqlalchemy
 psycopg[binary]
 pydantic-settings
 python-dotenv
+
+# PDF / OCR
 pymupdf
 rapidocr_onnxruntime==1.4.4
+paddlepaddle>=3.0.0
+paddleocr[all]
+
+# Embedding
 sentence-transformers==5.1.2
+
+# Test
 pytest
