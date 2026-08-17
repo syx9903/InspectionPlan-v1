@@ -5,6 +5,15 @@ TextPdfParser 使用 PDF 文本层，OcrPdfParser 使用页面渲染和 RapidOCR
 Page。PdfPageRouter 在单次遍历中逐页选择路径；Clause Parser仍属于后续任务。
 """
 
+from .evidence_links import (
+    BindingMethod,
+    EvidenceType,
+    LinkReviewStatus,
+    TableClauseLink,
+    TableClauseRelation,
+    TableContinuationLink,
+    TableContinuationRelation,
+)
 from .models import Page, ParseMethod, TextStatus
 from .ocr_pdf_parser import DEFAULT_OCR_DPI, OcrPdfParser
 from .pdf_page_router import MIN_MEANINGFUL_CHARACTERS, PdfPageRouter
@@ -22,8 +31,11 @@ from .table_models import (
 __all__ = [
     "DEFAULT_OCR_DPI",
     "BoundingBox",
+    "BindingMethod",
     "CellContentType",
     "CellRiskFlag",
+    "EvidenceType",
+    "LinkReviewStatus",
     "OcrPdfParser",
     "Page",
     "ParseMethod",
@@ -31,6 +43,10 @@ __all__ = [
     "PdfOpenError",
     "ReviewStatus",
     "Table",
+    "TableClauseLink",
+    "TableClauseRelation",
+    "TableContinuationLink",
+    "TableContinuationRelation",
     "TableAdapterError",
     "TableCell",
     "adapt_ppstructure_table",
